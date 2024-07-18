@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran dan Donasi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .form-section {
+            padding: 3rem 0;
+        }
+        .footer {
+            padding: 2rem 0;
+            background-color: #008a60;
+            color: white;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">BERTUMBUH</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kemitraan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kami Butuh Kamu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Post</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Newsletter</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Cari blog dan artikel disini ..." aria-label="Search">
+                <button class="btn btn-success" type="submit">Bergabung</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- Form Section -->
+<div class="container form-section">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="daftar-tab" data-bs-toggle="tab" data-bs-target="#daftar" type="button" role="tab" aria-controls="daftar" aria-selected="true">Daftar</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="donasi-tab" data-bs-toggle="tab" data-bs-target="#donasi" type="button" role="tab" aria-controls="donasi" aria-selected="false">Donasi</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="daftar" role="tabpanel" aria-labelledby="daftar-tab">
+            <form class="mt-4">
+                <div class="mb-3">
+                    <label for="nama" class="form-label">Nama Lengkap*</label>
+                    <input type="text" class="form-control" id="nama" required>
+                </div>
+                <div class="mb-3">
+                    <label for="ttl" class="form-label">TTL*</label>
+                    <input type="text" class="form-control" id="ttl" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email*</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="nohp" class="form-label">No HP*</label>
+                    <input type="text" class="form-control" id="nohp" required>
+                </div>
+                <div class="mb-3">
+                    <label for="status" class="form-label">Status Pernikahan*</label>
+                    <input type="text" class="form-control" id="status" required>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="alamat" class="form-label">Alamat*</label>
+                        <input type="text" class="form-control" id="alamat" required>
+                    </div>
+                    <div class="col">
+                        <label for="kodepos" class="form-label">Kode Pos*</label>
+                        <input type="text" class="form-control" id="kodepos" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="relawan" class="form-label">Daftar Jadi Relawan*</label>
+                    <select class="form-select" id="relawan" required>
+                        <option selected>Pilih...</option>
+                        <option value="1">Ya</option>
+                        <option value="2">Tidak</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="relawanCirebon" class="form-label">Jadi Relawan Cirebon*</label>
+                    <select class="form-select" id="relawanCirebon" required>
+                        <option selected>Pilih...</option>
+                        <option value="1">Ya</option>
+                        <option value="2">Tidak</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="foto" class="form-label">Unggah foto*</label>
+                    <input class="form-control" type="file" id="foto" required>
+                    <div class="form-text">Size file harus dibawah 10 MB</div>
+                </div>
+                <button type="submit" class="btn btn-success">SUBMIT</button>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="donasi" role="tabpanel" aria-labelledby="donasi-tab">
+            <!-- Donasi form content goes here -->
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>POSTS</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Berita</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Programs</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Jelajah Bersama</a></li>
+                    <li><a href="#">Tanam Pohon</a></li>
+                    <li><a href="#">Sosialisasi Hutan</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Alamat</h5>
+                <address>
+                    Jl. KH. Wahid Hasyim No.76, <br>
+                    Cipeujeuh Wetan, Kec. Lemahabang, <br>
+                    Kabupaten Cirebon, Jawa Barat, 45183 <br>
+                    <a href="mailto:surat@smknlemahabang.sch.id">surat@smknlemahabang.sch.id</a> <br>
+                    (0231) 635308
+                </address>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col text-center">
+                <p>&copy; 2022 BERTUMBUH | SKENSALA - SMKN 1 LEMAHABANG</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
